@@ -11,7 +11,7 @@ import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCa
 import MetricCardTen from '@/components/sections/metrics/MetricCardTen';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
-import { Shield, TrendingUp, Users } from "lucide-react";
+import { Shield } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -49,6 +49,7 @@ export default function LandingPage() {
       ]}
       mediaAnimation="slide-up"
       imageSrc="http://img.b2bpic.net/free-photo/serious-businessman-sitting-office-reading-business-reports-there-are-people-background_637285-218.jpg"
+      background={{ variant: "plain" }}
     />
   </div>
 
@@ -60,6 +61,7 @@ export default function LandingPage() {
       subdescription="We prioritize transparency, risk-adjusted returns, and long-term client success."
       icon={Shield}
       imageSrc="http://img.b2bpic.net/free-photo/business-colleagues-working-together-office_9975-22648.jpg"
+      videoSrc=""
     />
   </div>
 
@@ -107,6 +109,8 @@ export default function LandingPage() {
       animationType="slide-up"
       title="Client Success Stories"
       textboxLayout="split"
+      useInvertedBackground={false}
+      description="Read what our partners say."
       testimonials={[
         { id: "t1", name: "Robert Chen", role: "CEO", company: "TechCorp", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/attractive-blond-business-woman-white-shirt-eyeglasses-crossed-arms-grey-background_613910-13618.jpg" },
         { id: "t2", name: "Elena Martinez", role: "Founder", company: "Innovate", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/portrait-young-pretty-stylish-woman-coat-dreamily-looking-camera-outdoor_574295-2145.jpg" },
@@ -138,6 +142,7 @@ export default function LandingPage() {
       buttons={[
         { text: "Contact Us", href: "#" },
       ]}
+      background={{ variant: "plain" }}
     />
   </div>
 
