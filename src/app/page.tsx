@@ -62,6 +62,7 @@ export default function LandingPage() {
       icon={Shield}
       videoSrc="http://img.b2bpic.net/free-photo/business-colleagues-working-together-office_9975-22648.jpg"
       mediaAnimation="slide-up"
+      useInvertedBackground={false}
     />
   </div>
 
