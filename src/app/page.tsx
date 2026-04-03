@@ -59,6 +59,7 @@ export default function LandingPage() {
       subdescription="With two decades of experience, we manage capital with precision and integrity."
       icon={Target}
       imageSrc="http://img.b2bpic.net/free-photo/business-colleagues-working-together-office_9975-22648.jpg"
+      useInvertedBackground={false}
     />
   </div>
 
@@ -97,6 +98,7 @@ export default function LandingPage() {
       title="Trusted by Industry Leaders"
       description="Hear why executives and family offices choose Investrust Group."
       textboxLayout="default"
+      useInvertedBackground={false}
       testimonials={[
         { id: "t1", name: "Alex Rivers", role: "CEO", company: "Rivers Tech", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/attractive-blond-business-woman-white-shirt-eyeglasses-crossed-arms-grey-background_613910-13618.jpg" },
         { id: "t2", name: "Jordan Hayes", role: "Director", company: "Hayes Group", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/portrait-young-pretty-stylish-woman-coat-dreamily-looking-camera-outdoor_574295-2145.jpg" },
@@ -113,8 +115,10 @@ export default function LandingPage() {
         { id: "f3", title: "Can I track my portfolio real-time?", content: "Our encrypted client portal provides real-time access to your assets." }
       ]}
       title="Investment Questions"
+      description="Frequently asked questions about our services."
       faqsAnimation="slide-up"
       textboxLayout="default"
+      useInvertedBackground={false}
     />
   </div>
 
@@ -125,6 +129,7 @@ export default function LandingPage() {
       description="Ready to discuss your wealth management goals? Our experts are available for an initial consultation."
       buttons={[{ text: "Schedule a Call", href: "#" }]}
       background={{ variant: "sparkles-gradient" }}
+      useInvertedBackground={false}
     />
   </div>
 
