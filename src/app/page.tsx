@@ -59,6 +59,7 @@ export default function LandingPage() {
       subdescription="With two decades of experience, we manage capital with precision and integrity."
       icon={Target}
       imageSrc="http://img.b2bpic.net/free-photo/business-colleagues-working-together-office_9975-22648.jpg"
+      mediaAnimation="blur-reveal"
       useInvertedBackground={false}
     />
   </div>
@@ -113,9 +114,12 @@ export default function LandingPage() {
         { id: "f1", title: "What is your investment philosophy?", content: "We focus on long-term capital preservation and consistent growth through diversification." },
         { id: "f2", title: "How is your advisory fee structured?", content: "We offer transparent, flat-fee advisory structures with no hidden incentives." },
         { id: "f3", title: "Can I track my portfolio real-time?", content: "Our encrypted client portal provides real-time access to your assets." }
-      ],
-      title: "Investment Questions",      description: "Frequently asked questions about our services.",      faqsAnimation: "slide-up",      textboxLayout: "default",      useInvertedBackground: false
-    }
+      ]}
+      title="Investment Questions"
+      description="Frequently asked questions about our services."
+      faqsAnimation="slide-up"
+      textboxLayout="default"
+      useInvertedBackground={false}
     />
   </div>
 
