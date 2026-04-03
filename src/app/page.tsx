@@ -87,7 +87,7 @@ export default function LandingPage() {
         { id: "m2", title: "Avg. Annual Yield", subtitle: "Benchmark Return", category: "Performance", value: "12.8%" },
         { id: "m3", title: "Client Retention", subtitle: "Long-term Loyalty", category: "Relationship", value: "99%" }
       ]}
-      textboxLayout="centered"
+      textboxLayout="left"
     />
   </div>
 
@@ -113,12 +113,9 @@ export default function LandingPage() {
         { id: "f1", title: "What is your investment philosophy?", content: "We focus on long-term capital preservation and consistent growth through diversification." },
         { id: "f2", title: "How is your advisory fee structured?", content: "We offer transparent, flat-fee advisory structures with no hidden incentives." },
         { id: "f3", title: "Can I track my portfolio real-time?", content: "Our encrypted client portal provides real-time access to your assets." }
-      ]}
-      title="Investment Questions"
-      description="Frequently asked questions about our services."
-      faqsAnimation="slide-up"
-      textboxLayout="default"
-      useInvertedBackground={false}
+      ],
+      title: "Investment Questions",      description: "Frequently asked questions about our services.",      faqsAnimation: "slide-up",      textboxLayout: "default",      useInvertedBackground: false
+    }
     />
   </div>
 
