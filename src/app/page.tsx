@@ -61,6 +61,7 @@ export default function LandingPage() {
       subdescription="We prioritize transparency, risk-adjusted returns, and long-term client success."
       icon={Shield}
       imageSrc="http://img.b2bpic.net/free-photo/business-colleagues-working-together-office_9975-22648.jpg"
+      mediaAnimation="slide-up"
     />
   </div>
 
@@ -141,7 +142,6 @@ export default function LandingPage() {
       buttons={[
         { text: "Contact Us", href: "#" },
       ]}
-      background={{ variant: "plain" }}
     />
   </div>
 
