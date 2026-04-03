@@ -11,7 +11,7 @@ import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCa
 import MetricCardTen from '@/components/sections/metrics/MetricCardTen';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
-import { Shield } from "lucide-react";
+import { Shield, TrendingUp, Users, Target } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -33,8 +33,8 @@ export default function LandingPage() {
       navItems={[
         { name: "About", id: "about" },
         { name: "Services", id: "features" },
-        { name: "Results", id: "metrics" },
-        { name: "Contact", id: "contact" },
+        { name: "Performance", id: "metrics" },
+        { name: "Contact", id: "contact" }
       ]}
       brandName="Investrust Group"
     />
@@ -43,107 +43,88 @@ export default function LandingPage() {
   <div id="hero" data-section="hero">
       <HeroLogoBillboard
       logoText="Investrust Group"
-      description="Strategic investment management tailored to your long-term goals. We combine data-driven insights with personalized wealth solutions."
-      buttons={[
-        { text: "Start Investing", href: "#contact" },
-      ]}
-      mediaAnimation="slide-up"
-      imageSrc="http://img.b2bpic.net/free-photo/serious-businessman-sitting-office-reading-business-reports-there-are-people-background_637285-218.jpg"
-      background={{ variant: "plain" }}
+      description="Strategic wealth management for the modern investor. We combine institutional-grade insights with bespoke advisory services."
+      buttons={[{ text: "Explore Services", href: "#features" }, { text: "Get Started", href: "#contact" }]}
+      background={{ variant: "gradient-bars" }}
+      imageSrc="http://img.b2bpic.net/free-photo/financial-graph-with-data-charts-digital-screen_23-2149162464.jpg"
+      mediaAnimation="blur-reveal"
     />
   </div>
 
   <div id="about" data-section="about">
       <TestimonialAboutCard
-      tag="Legacy"
-      title="A Legacy of Financial Excellence"
-      description="With over 20 years in the industry, Investrust Group provides a sophisticated approach to asset management."
-      subdescription="We prioritize transparency, risk-adjusted returns, and long-term client success."
-      icon={Shield}
-      videoSrc="http://img.b2bpic.net/free-photo/business-colleagues-working-together-office_9975-22648.jpg"
-      mediaAnimation="slide-up"
-      useInvertedBackground={false}
+      tag="Our Commitment"
+      title="Architects of Your Financial Future"
+      description="Investrust Group simplifies complexity. We offer a clear, transparent view into your portfolio, ensuring every decision aligns with your long-term success."
+      subdescription="With two decades of experience, we manage capital with precision and integrity."
+      icon={Target}
+      imageSrc="http://img.b2bpic.net/free-photo/business-colleagues-working-together-office_9975-22648.jpg"
     />
   </div>
 
   <div id="features" data-section="features">
       <FeatureCardTwentyFour
       animationType="slide-up"
-      textboxLayout="default"
+      textboxLayout="split"
       useInvertedBackground={false}
+      title="Strategic Investment Services"
+      description="Customized solutions built for the modern economy."
       features={[
-        {
-          id: "s1", title: "Portfolio Optimization", author: "Expert Team", description: "Dynamic reallocation based on market conditions.", tags: ["Growth", "Stability"],
-          imageSrc: "http://img.b2bpic.net/free-photo/dynamic-data-visualization-3d_23-2151904317.jpg"
-        },
-        {
-          id: "s2", title: "Risk Management", author: "Analyst Panel", description: "Mitigating volatility through diversified asset classes.", tags: ["Protection", "Security"],
-          imageSrc: "http://img.b2bpic.net/free-photo/cyber-security-concept-digital-art_23-2151637777.jpg"
-        },
-        {
-          id: "s3", title: "Retirement Strategy", author: "Financial Planners", description: "Securing your future with long-term capital appreciation.", tags: ["Retirement", "Long-term"],
-          imageSrc: "http://img.b2bpic.net/free-photo/professional-service-investment-retirement-financial-planning_53876-123853.jpg"
-        },
+        { id: "s1", title: "Portfolio Management", author: "Investrust Team", description: "High-conviction strategies built on data.", tags: ["Growth", "Diversification"], imageSrc: "http://img.b2bpic.net/free-photo/dynamic-data-visualization-3d_23-2151904317.jpg" },
+        { id: "s2", title: "Risk Management", author: "Analysts", description: "Defensive protocols for market volatility.", tags: ["Stability", "Security"], imageSrc: "http://img.b2bpic.net/free-photo/cyber-security-concept-digital-art_23-2151637777.jpg" }
       ]}
-      title="Our Specialized Services"
-      description="Comprehensive investment strategies designed to grow and protect your wealth."
     />
   </div>
 
   <div id="metrics" data-section="metrics">
       <MetricCardTen
       animationType="slide-up"
-      textboxLayout="spread"
+      title="Proven Results"
+      description="Key indicators of our financial advisory efficacy."
       metrics={[
-        { id: "m1", title: "Assets Under Management", subtitle: "Total managed capital", category: "Growth", value: "$5B+" },
-        { id: "m2", title: "Average Annual Yield", subtitle: "Performance metric", category: "Yield", value: "12.4%" },
-        { id: "m3", title: "Client Retention", subtitle: "Building relationships", category: "Loyalty", value: "98%" },
+        { id: "m1", title: "Assets Under Management", subtitle: "Total Capital", category: "Scale", value: "$5.2B+" },
+        { id: "m2", title: "Avg. Annual Yield", subtitle: "Benchmark Return", category: "Performance", value: "12.8%" },
+        { id: "m3", title: "Client Retention", subtitle: "Long-term Loyalty", category: "Relationship", value: "99%" }
       ]}
-      title="Measured by Results"
-      description="Our performance speaks for itself, driving consistent value across all portfolios."
+      textboxLayout="spread"
     />
   </div>
 
   <div id="testimonials" data-section="testimonials">
       <TestimonialCardOne
-      gridVariant="timeline"
+      gridVariant="three-columns-all-equal-width"
       animationType="slide-up"
-      title="Client Success Stories"
-      textboxLayout="split"
-      useInvertedBackground={false}
-      description="Read what our partners say."
+      title="Trusted by Industry Leaders"
+      description="Hear why executives and family offices choose Investrust Group."
+      textboxLayout="default"
       testimonials={[
-        { id: "t1", name: "Robert Chen", role: "CEO", company: "TechCorp", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/attractive-blond-business-woman-white-shirt-eyeglasses-crossed-arms-grey-background_613910-13618.jpg" },
-        { id: "t2", name: "Elena Martinez", role: "Founder", company: "Innovate", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/portrait-young-pretty-stylish-woman-coat-dreamily-looking-camera-outdoor_574295-2145.jpg" },
+        { id: "t1", name: "Alex Rivers", role: "CEO", company: "Rivers Tech", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/attractive-blond-business-woman-white-shirt-eyeglasses-crossed-arms-grey-background_613910-13618.jpg" },
+        { id: "t2", name: "Jordan Hayes", role: "Director", company: "Hayes Group", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/portrait-young-pretty-stylish-woman-coat-dreamily-looking-camera-outdoor_574295-2145.jpg" },
+        { id: "t3", name: "Marcus Thorne", role: "Principal", company: "Thorne Capital", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/man-with-fingers-intertwined-leaning-his-chin_1187-3066.jpg" }
       ]}
     />
   </div>
 
   <div id="faq" data-section="faq">
       <FaqSplitMedia
-      textboxLayout="default"
-      useInvertedBackground={false}
       faqs={[
-        { id: "f1", title: "How do you mitigate market risk?", content: "We employ sophisticated hedging strategies and strict asset allocation protocols to minimize exposure." },
-        { id: "f2", title: "Can I start with a small amount?", content: "Yes, we offer flexible entry options tailored to various portfolio sizes." },
+        { id: "f1", title: "What is your investment philosophy?", content: "We focus on long-term capital preservation and consistent growth through diversification." },
+        { id: "f2", title: "How is your advisory fee structured?", content: "We offer transparent, flat-fee advisory structures with no hidden incentives." },
+        { id: "f3", title: "Can I track my portfolio real-time?", content: "Our encrypted client portal provides real-time access to your assets." }
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/serious-businesswoman-analyzing-situation_1098-1307.jpg"
-      title="Frequently Asked Questions"
-      description="Clear answers to your investment queries."
+      title="Investment Questions"
       faqsAnimation="slide-up"
+      textboxLayout="default"
     />
   </div>
 
   <div id="contact" data-section="contact">
       <ContactCTA
-      useInvertedBackground={false}
-      tag="Get Started"
-      title="Ready to Grow Your Wealth?"
-      description="Speak with our advisors to discuss your financial goals."
-      buttons={[
-        { text: "Contact Us", href: "#" },
-      ]}
-      background={{ variant: "plain" }}
+      tag="Contact Us"
+      title="Begin Your Journey Today"
+      description="Ready to discuss your wealth management goals? Our experts are available for an initial consultation."
+      buttons={[{ text: "Schedule a Call", href: "#" }]}
+      background={{ variant: "sparkles-gradient" }}
     />
   </div>
 
@@ -152,7 +133,7 @@ export default function LandingPage() {
       imageSrc="http://img.b2bpic.net/free-photo/urban-skyline-with-cityscape_1359-258.jpg"
       columns={[
         { title: "Investrust", items: [{ label: "About", href: "#about" }, { label: "Careers", href: "#" }] },
-        { title: "Resources", items: [{ label: "Market Insights", href: "#" }, { label: "FAQ", href: "#faq" }] },
+        { title: "Performance", items: [{ label: "Market Reports", href: "#" }, { label: "FAQ", href: "#faq" }] }
       ]}
       logoText="Investrust Group"
     />
