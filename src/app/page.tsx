@@ -87,7 +87,7 @@ export default function LandingPage() {
         { id: "m2", title: "Avg. Annual Yield", subtitle: "Benchmark Return", category: "Performance", value: "12.8%" },
         { id: "m3", title: "Client Retention", subtitle: "Long-term Loyalty", category: "Relationship", value: "99%" }
       ]}
-      textboxLayout="left"
+      textboxLayout="centered"
     />
   </div>
 
