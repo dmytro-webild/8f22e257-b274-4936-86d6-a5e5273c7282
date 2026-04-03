@@ -11,7 +11,7 @@ import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCa
 import MetricCardTen from '@/components/sections/metrics/MetricCardTen';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
-import { Shield, TrendingUp, Users, Target } from "lucide-react";
+import { Target } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -87,7 +87,7 @@ export default function LandingPage() {
         { id: "m2", title: "Avg. Annual Yield", subtitle: "Benchmark Return", category: "Performance", value: "12.8%" },
         { id: "m3", title: "Client Retention", subtitle: "Long-term Loyalty", category: "Relationship", value: "99%" }
       ]}
-      textboxLayout="spread"
+      textboxLayout="left"
     />
   </div>
 
